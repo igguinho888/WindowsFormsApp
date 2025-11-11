@@ -58,7 +58,7 @@
             this.btnsair.Name = "btnsair";
             this.btnsair.Size = new System.Drawing.Size(115, 112);
             this.btnsair.TabIndex = 9;
-            this.btnsair.Click += new System.EventHandler(this.btnsair_Click_1);
+            this.btnsair.Click += new System.EventHandler(this.Btnsair_Click_1);
             // 
             // btnconfig
             // 
@@ -175,7 +175,7 @@
             this.btncavalo.Name = "btncavalo";
             this.btncavalo.Size = new System.Drawing.Size(115, 112);
             this.btncavalo.TabIndex = 3;
-            this.btncavalo.Click += new System.EventHandler(this.btncavalo_Click_1);
+            this.btncavalo.Click += new System.EventHandler(this.Btncavalo_Click_1);
             // 
             // btnareas
             // 
@@ -195,7 +195,7 @@
             this.btnareas.Name = "btnareas";
             this.btnareas.Size = new System.Drawing.Size(114, 112);
             this.btnareas.TabIndex = 2;
-            this.btnareas.Click += new System.EventHandler(this.btnareas_Click);
+            this.btnareas.Click += new System.EventHandler(this.Btnareas_Click);
             // 
             // pictureBox1
             // 
@@ -205,7 +205,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(809, 461);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // FrmPrincipal
             // 
