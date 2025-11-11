@@ -66,6 +66,7 @@ namespace WindowsFormsApp1
         {
             FrmCadastro form = new FrmCadastro();
             form.ShowDialog();
+            this.Hide();
         }
 
         private void TxbId_TextChanged(object sender, EventArgs e)

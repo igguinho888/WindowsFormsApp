@@ -32,65 +32,63 @@ namespace WindowsFormsApp1
         }
 
         private void BtnCadastrar_Click_1(object sender, EventArgs e)
-        {
-            // 1. String de conexão (ajuste o Data Source para o nome do seu SQL Server)
-            string connectionString = "Data Source=SQLEXPRESS;Initial Catalog=CJ3027651PR2;User ID=aluno;Password=aluno;";
-            Debug.WriteLine("obara");
-
-
-            // 2. Query de inserção
+        { 
+        
+       
+            string connectionString = @"Data Source=SQLExpress;Initial Catalog=CJ3027651PR2;User ID=aluno;Password=aluno;";
             string sql = "INSERT INTO usuarios (Cpf, DataNascimento, Endereco, Cep, Telefone, Email, Senha) " +
-                         "VALUES (@Cpf, @DataNascimento, @Endereco, @CEP, @Telefone, @Email, @Senha)";
-            Debug.WriteLine("MAURO");
-            try
+                         "VALUES (@cpf, @dataNascimento, @endereco, @cep, @telefone, @email, @senha)";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
-                    using (SqlCommand cmd = new SqlCommand(sql, con))
+                    cmd.Parameters.AddWithValue("@cpf", txtCpf.Text);
+                    cmd.Parameters.AddWithValue("@dataNascimento", txtDatadenasc.Text);
+                    cmd.Parameters.AddWithValue("@endereco", txtendereco.Text);
+                    cmd.Parameters.AddWithValue("@cep", txtCep.Text);
+                    cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
+
+                    try
                     {
-                        // 3. Passar os valores dos campos
-                        cmd.Parameters.AddWithValue("@Cpf", txtCpf.Text);                       
-                        cmd.Parameters.AddWithValue("@Datanascimento", txtDatadenasc.Text);
-                        cmd.Parameters.AddWithValue("@Endereco", txtEndereço.Text);
-                        cmd.Parameters.AddWithValue("@Cep", txtCep.Text);
-                        cmd.Parameters.AddWithValue("@Telefone", txtTelefone.Text);
-                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                        cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
-                        Debug.WriteLine("IGOR");
-                        // 4. Abrir conexão e executar
                         con.Open();
-                        Debug.WriteLine("IMENSO");
-                        cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery(); // apenas executa o INSERT
+                        MessageBox.Show("Usuário cadastrado com sucesso!",
+                                        "Cadastro Concluído",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information);
+
+                        // Abrir tela principal, se quiser
+                        FrmPrincipal form = new FrmPrincipal();
+                        form.Show();
                     }
-                    Debug.WriteLine("JJ");
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao cadastrar: " + ex.Message);
+                    }
                 }
-
-                // 5. Mensagem de sucesso
-                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // 6. Abrir próxima tela
-                FrmPrincipal form = new FrmPrincipal();
-                form.Show();
-                this.Hide(); // Esconde o formulário de cadastro
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
+
 
         private void Lbldtnascimento_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void txtSenha_TextChanged(object sender, EventArgs e)
+        private void TxtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtendereço_TextChanged(object sender, EventArgs e)
         {
 
         }

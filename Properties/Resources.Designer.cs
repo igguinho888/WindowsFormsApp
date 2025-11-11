@@ -203,6 +203,76 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_28_102523 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-28 102523", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_28_1025231 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-28 1025231", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_28_1025232 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-28 1025232", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_10_28_1025233 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-10-28 1025233", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_11_04_085454 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-11-04 085454", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_11_04_100426 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-11-04 100426", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_11_04_101403 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-11-04 101403", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cavalo {
             get {
                 object obj = ResourceManager.GetObject("cavalo", resourceCulture);
@@ -276,6 +346,36 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap financeiro {
             get {
                 object obj = ResourceManager.GetObject("financeiro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Interiror_baias_para_cavalos_1024x683 {
+            get {
+                object obj = ResourceManager.GetObject("Interiror-baias-para-cavalos-1024x683", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Interiror_baias_para_cavalos_1024x6831 {
+            get {
+                object obj = ResourceManager.GetObject("Interiror-baias-para-cavalos-1024x6831", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Interiror_baias_para_cavalos_1024x6832 {
+            get {
+                object obj = ResourceManager.GetObject("Interiror-baias-para-cavalos-1024x6832", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

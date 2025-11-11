@@ -195,6 +195,7 @@
             this.btnareas.Name = "btnareas";
             this.btnareas.Size = new System.Drawing.Size(114, 112);
             this.btnareas.TabIndex = 2;
+            this.btnareas.Click += new System.EventHandler(this.btnareas_Click);
             // 
             // pictureBox1
             // 
@@ -204,6 +205,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(809, 461);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmPrincipal
             // 

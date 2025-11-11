@@ -38,7 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.txtDatadenasc = new System.Windows.Forms.TextBox();
-            this.txtEndereço = new System.Windows.Forms.TextBox();
+            this.txtendereco = new System.Windows.Forms.TextBox();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -128,7 +128,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // txtCpf
             // 
@@ -144,12 +144,13 @@
             this.txtDatadenasc.Size = new System.Drawing.Size(132, 20);
             this.txtDatadenasc.TabIndex = 19;
             // 
-            // txtEndereço
+            // txtendereco
             // 
-            this.txtEndereço.Location = new System.Drawing.Point(51, 258);
-            this.txtEndereço.Name = "txtEndereço";
-            this.txtEndereço.Size = new System.Drawing.Size(132, 20);
-            this.txtEndereço.TabIndex = 20;
+            this.txtendereco.Location = new System.Drawing.Point(51, 258);
+            this.txtendereco.Name = "txtendereco";
+            this.txtendereco.Size = new System.Drawing.Size(132, 20);
+            this.txtendereco.TabIndex = 20;
+            this.txtendereco.TextChanged += new System.EventHandler(this.Txtendereço_TextChanged);
             // 
             // txtCep
             // 
@@ -172,7 +173,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(132, 20);
             this.txtSenha.TabIndex = 23;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            this.txtSenha.TextChanged += new System.EventHandler(this.TxtSenha_TextChanged);
             // 
             // txtEmail
             // 
@@ -202,7 +203,7 @@
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtCep);
-            this.Controls.Add(this.txtEndereço);
+            this.Controls.Add(this.txtendereco);
             this.Controls.Add(this.txtDatadenasc);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.lbltelefone);
@@ -234,7 +235,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lbltelefone;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.TextBox txtDatadenasc;
-        private System.Windows.Forms.TextBox txtEndereço;
+        private System.Windows.Forms.TextBox txtendereco;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.TextBox txtSenha;

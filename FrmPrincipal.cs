@@ -50,8 +50,7 @@ namespace WindowsFormsApp1
         {
          
         {
-            formsCavalo formCavalos = new formsCavalo();
-            formCavalos.Show();
+            
             
             }
             
@@ -64,25 +63,37 @@ namespace WindowsFormsApp1
         }
 
         
-        private void btnsair_Click_1(object sender, EventArgs e)
+        private void Btnsair_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btncavalo_Click_1(object sender, EventArgs e)
+        private void Btncavalo_Click_1(object sender, EventArgs e)
         {
-            formsCavalo form = new formsCavalo();
+            FrmCavalos2 form = new FrmCavalos2();
             form.ShowDialog();
         }
 
-        private void btnsaude_Click(object sender, EventArgs e)
+        private void Btnsaude_Click(object sender, EventArgs e)
+        {
+            saude    form = new saude();
+            form.ShowDialog();
+        }
+
+        private void Btnalimentacao_Click(object sender, EventArgs e)
+        {
+            alimento form = new alimento();
+            form.ShowDialog();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnalimentacao_Click(object sender, EventArgs e)
+        private void Btnareas_Click(object sender, EventArgs e)
         {
-            alimento form = new alimento();
+            areas form = new areas();
             form.ShowDialog();
         }
     }

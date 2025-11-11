@@ -105,17 +105,17 @@
     <Compile Include="alimento.Designer.cs">
       <DependentUpon>alimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsCavalo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCavalo.Designer.cs">
-      <DependentUpon>formsCavalo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCadastro.Designer.cs">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCavalos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCavalos2.Designer.cs">
+      <DependentUpon>FrmCavalos2.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -158,11 +158,14 @@
     <EmbeddedResource Include="alimento.resx">
       <DependentUpon>alimento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsCavalo.resx">
-      <DependentUpon>formsCavalo.cs</DependentUpon>
+    <EmbeddedResource Include="areas.resx">
+      <DependentUpon>areas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCavalos2.resx">
+      <DependentUpon>FrmCavalos2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmtipoA.resx">
       <DependentUpon>FrmtipoA.cs</DependentUpon>
@@ -177,6 +180,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saude.resx">
+      <DependentUpon>saude.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -283,6 +289,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\resul tados %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-10-28 1025232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-10-28 1025233.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interiror-baias-para-cavalos-1024x683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interiror-baias-para-cavalos-1024x6831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interiror-baias-para-cavalos-1024x6832.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-11-04 085454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-11-04 100426.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-11-04 101403.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
