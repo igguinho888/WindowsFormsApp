@@ -143,6 +143,7 @@
             this.txbcapacidadeanimais.Size = new System.Drawing.Size(176, 21);
             this.txbcapacidadeanimais.TabIndex = 28;
             this.txbcapacidadeanimais.text = "Bunifu TextBox";
+            this.txbcapacidadeanimais.OnTextChange += new System.EventHandler(this.txbcapacidadeanimais_OnTextChange);
             // 
             // txbtipolocal
             // 

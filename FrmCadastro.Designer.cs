@@ -136,6 +136,7 @@
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(132, 20);
             this.txtCpf.TabIndex = 17;
+            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
             // 
             // txtDatadenasc
             // 

@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+
             // Ajuste o nome do servidor conforme sua instância
             string connectionString = @"Data Source=SEU_SERVIDOR;Initial Catalog=CJ3027651PR2;Integrated Security=True";
 
@@ -38,16 +38,28 @@ namespace WindowsFormsApp1
             string tipo = txbtipolocal.Text.Trim();         // ou comboBoxTipo.SelectedItem.ToString();
             string responsavel = txbresponsavel.Text.Trim();
             string observacoes = txbobservacoes.Text.Trim();
-            string capadidade = txbcapacidadeanimais.Text.Trim();
 
+            // =====================================================
+            //                DEBUG → MOSTRAR O TEXTO REAL
+            // =====================================================
+            string textoCapacidade = txbcapacidadeanimais.Text;
+            MessageBox.Show("Conteúdo real do textbox: [" + textoCapacidade + "]");
+            // =====================================================
 
-            // validação básica para Capacidade
+            // Limpeza (remove espaços e caracteres não-numéricos)
+            textoCapacidade = textoCapacidade.Trim();
+            textoCapacidade = new string(textoCapacidade.Where(char.IsDigit).ToArray());
+
             int capacidade = 1;
-            if (!int.TryParse(txbcapacidadeanimais.Text.Trim(), out capacidade))
+            if (!int.TryParse(textoCapacidade, out capacidade))
             {
-                MessageBox.Show("Informe um número inteiro válido no campo Capacidade.", "Capacidade inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Informe um número inteiro válido no campo Capacidade.",
+                                "Capacidade inválida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
                 return;
             }
+            // --------------------------------------------------
 
             try
             {
@@ -69,7 +81,7 @@ namespace WindowsFormsApp1
                     // Limpar campos (opcional)
                     txbarea.Text = "";
                     txbtipolocal.Text = "";
-                    txbcapacidadeanimais.Text = "";
+                    txbcapacidadeanimais.Text = "0>=1000000";
                     txbresponsavel.Text = "";
                     txbobservacoes.Text = "";
                 }
@@ -81,6 +93,11 @@ namespace WindowsFormsApp1
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbcapacidadeanimais_OnTextChange(object sender, EventArgs e)
         {
 
         }

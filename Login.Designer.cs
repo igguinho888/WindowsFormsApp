@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txbsenha = new System.Windows.Forms.TextBox();
             this.lblsenha = new System.Windows.Forms.Label();
             this.txbId = new System.Windows.Forms.TextBox();
@@ -102,14 +103,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.baixados;
-            this.ClientSize = new System.Drawing.Size(1440, 672);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(799, 513);
             this.Controls.Add(this.btncadastrar1);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.txbsenha);
             this.Controls.Add(this.lblsenha);
             this.Controls.Add(this.txbId);
             this.Controls.Add(this.lblUsuario);
+            this.DoubleBuffered = true;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

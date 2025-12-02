@@ -135,7 +135,7 @@
             this.btnalimentacao.Name = "btnalimentacao";
             this.btnalimentacao.Size = new System.Drawing.Size(114, 112);
             this.btnalimentacao.TabIndex = 5;
-            this.btnalimentacao.Click += new System.EventHandler(this.btnalimentacao_Click);
+            this.btnalimentacao.Click += new System.EventHandler(this.Btnalimentacao_Click);
             // 
             // btnsaude
             // 
@@ -155,7 +155,7 @@
             this.btnsaude.Name = "btnsaude";
             this.btnsaude.Size = new System.Drawing.Size(116, 112);
             this.btnsaude.TabIndex = 4;
-            this.btnsaude.Click += new System.EventHandler(this.btnsaude_Click);
+            this.btnsaude.Click += new System.EventHandler(this.Btnsaude_Click);
             // 
             // btncavalo
             // 

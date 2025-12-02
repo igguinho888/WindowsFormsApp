@@ -92,6 +92,11 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void txtCpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
